@@ -1,0 +1,114 @@
+"@context":
+
+ontologies:
+
+## PHI
+
+  - id: phi
+    preferredPrefix: PHI
+    title: PHI-base Ontology
+    description: "Pathogen-Host Interaction database Ontology used by Ensembl"
+    definition_property:
+      - http://purl.obolibrary.org/obo/IAO_0000115
+    synonym_property:
+      - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+    base_uri:
+      - http://purl.obolibrary.org/ontology/PHI_
+    ontology_purl: file:/nfs/panda/ensembl/production/ensprod/obo_files/PHI.obo
+
+
+## EFO
+
+  - id: efo
+    preferredPrefix: EFO
+    title: Experimental Factor Ontology
+    uri: http://www.ebi.ac.uk/efo
+    description: "The Experimental Factor Ontology (EFO) provides a systematic description of many experimental variables available in EBI databases, and for external projects such as the NHGRI GWAS catalogue. It combines parts of several biological ontologies, such as anatomy, disease and chemical compounds. The scope of EFO is to support the annotation, analysis and visualization of data handled by many groups at the EBI and as the core ontology for the Centre for Therapeutic Validation (CTTV)"
+    homepage: http://www.ebi.ac.uk/efo
+    mailing_list: efo-users@lists.sourceforge.net
+    definition_property:
+      - http://purl.obolibrary.org/obo/IAO_0000115
+      - http://www.ebi.ac.uk/efo/definition
+    synonym_property:
+      - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+      - http://www.ebi.ac.uk/efo/alternative_term
+    hierarchical_property:
+      - http://purl.obolibrary.org/obo/BFO_0000050
+      - http://purl.obolibrary.org/obo/RO_0002202
+    hidden_property:
+      - http://www.ebi.ac.uk/efo/has_flag
+    base_uri:
+      - http://www.ebi.ac.uk/efo/EFO_
+    reasoner: OWL2
+    oboSlims: false
+    ontology_purl: http://www.ebi.ac.uk/efo/efo.owl
+
+## ORDO
+
+  - id: ordo
+    preferredPrefix: ORDO
+    description: "The Orphanet Rare Disease ontology (ORDO) is jointly developed by Orphanet and the EBI to provide a structured vocabulary for rare diseases capturing relationships between diseases, genes and other relevant features which will form a useful resource for the computational analysis of rare diseases.
+                  It derived from the Orphanet database (www.orpha.net ) , a multilingual database dedicated to rare diseases populated from literature and validated by international experts.
+                  It integrates a nosology (classification of rare diseases), relationships (gene-disease relations, epiemological data) and connections with other terminologies (MeSH, UMLS, MedDRA),databases (OMIM, UniProtKB, HGNC, ensembl, Reactome, IUPHAR, Geantlas) or classifications (ICD10)."
+    title: Orphanet Rare Disease Ontolog
+    uri: http://www.orpha.net/ontology/orphanet.owl
+    definition_property:
+      - http://www.ebi.ac.uk/efo/definition
+    synonym_property:
+      - http://www.ebi.ac.uk/efo/alternative_term
+    hidden_property:
+      - http://www.ebi.ac.uk/efo/has_flag
+    hierarchical_property:
+      - http://purl.obolibrary.org/obo/BFO_0000050
+    base_uri:
+      - http://www.orpha.net/ORDO/Orphanet_
+    reasoner: OWL2
+    oboSlims: false
+    ontology_purl: http://www.orphadata.org/data/ORDO/ordo_orphanet.owl
+
+## Ensembl glossary
+
+  - id: ensemblglossary
+    preferredPrefix: ENSGLOSS
+    title: Ensembl Glossary
+    uri: http://ensembl.org/glossary
+    description: "Ensembl glossary of terms"
+    homepage: http://ensembl.org/glossary
+    definition_property:
+      - http://purl.obolibrary.org/obo/IAO_0000115
+    synonym_property:
+      - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+    base_uri:
+      - http://ensembl.org/glossary/ENSGLOSS_
+    reasoner: NONE
+    ontology_purl: https://raw.githubusercontent.com/simonjupp/ensembl-glossary/master/ensembl-glossary.owl
+
+## SRAO
+  - id: srao
+    preferredPrefix: SRAO
+    title: FAIRsharing Subject Ontology (SRAO)
+    uri: http://www.fairsharing.org/ontology/subject/SRAO.owl
+    description: "The FAIRsharing Subject Ontology (SRAO) is an application ontology for the categorization of research disciplines across all research domains, from the humanities to the natural sciences. It utilizes multiple external vocabularies."
+    homepage: https://github.com/FAIRsharing/subject-ontology
+    mailing_list: contact@fairsharing.org
+    label_property: http://www.w3.org/2000/01/rdf-schema#label
+    definition_property:
+      - http://purl.obolibrary.org/obo/IAO_0000115
+    synonym_property:
+      - http://purl.obolibrary.org/obo/IAO_0000118
+      - http://www.fairsharing.org/ontology/subject/SRAO_0000279
+      - http://www.fairsharing.org/ontology/subject/SRAO_0000278
+      - http://www.fairsharing.org/ontology/subject/SRAO_0000269
+      - http://www.fairsharing.org/ontology/domain/DRAO_0000001
+      - http://www.fairsharing.org/ontology/subject/SRAO_0000276
+      - http://www.fairsharing.org/ontology/subject/SRAO_0000317
+      - http://www.fairsharing.org/ontology/subject/SRAO_0000272
+      - http://www.fairsharing.org/ontology/subject/SRAO_0000292
+      - http://www.fairsharing.org/ontology/subject/SRAO_0000268
+    base_uri:
+      - http://www.fairsharing.org/ontology/subject
+    reasoner: OWL2
+    oboSlims: false
+    ontology_purl : https://github.com/FAIRsharing/subject-ontology/raw/master/releases/SRAO.owl
+
+
