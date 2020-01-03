@@ -27,3 +27,36 @@ ontologies:
     reasoner: OWL2
     oboSlims: false
     ontology_purl: http://www.ebi.ac.uk/efo/efo.owl
+
+  ## SRAO
+  - id: srao
+    preferredPrefix: SRAO
+    title: FAIRsharing Subject Ontology (SRAO)
+    uri: http://www.fairsharing.org/ontology/subject/SRAO.owl
+    description: "The FAIRsharing Subject Ontology (SRAO) is an application ontology for the categorization of research disciplines across all research domains, from the humanities to the natural sciences. It utilizes multiple external vocabularies."
+    homepage: https://github.com/FAIRsharing/subject-ontology
+    mailing_list: contact@fairsharing.org
+    label_property: http://www.w3.org/2000/01/rdf-schema#label
+    definition_property:
+      - http://purl.obolibrary.org/obo/IAO_0000115
+    synonym_property:
+      - http://purl.obolibrary.org/obo/IAO_0000118
+      - http://www.fairsharing.org/ontology/subject/SRAO_0000279
+      - http://www.fairsharing.org/ontology/subject/SRAO_0000278
+      - http://www.fairsharing.org/ontology/subject/SRAO_0000269
+      - http://www.fairsharing.org/ontology/domain/DRAO_0000001
+      - http://www.fairsharing.org/ontology/subject/SRAO_0000276
+      - http://www.fairsharing.org/ontology/subject/SRAO_0000317
+      - http://www.fairsharing.org/ontology/subject/SRAO_0000272
+      - http://www.fairsharing.org/ontology/subject/SRAO_0000292
+      - http://www.fairsharing.org/ontology/subject/SRAO_0000268
+    base_uri:
+      - http://www.fairsharing.org/ontology/subject
+    reasoner: OWL2
+    oboSlims: false
+    ontology_purl : https://github.com/FAIRsharing/subject-ontology/raw/master/releases/SRAO.owl
+
+  ## overide for mondo
+
+  - id: mondo
+    ontology_purl: http://purl.obolibrary.org/obo/mondo.obo
