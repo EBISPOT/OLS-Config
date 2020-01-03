@@ -1,4 +1,4 @@
-﻿"@context":
+"@context":
 
 ontologies:
 
@@ -13,27 +13,9 @@ ontologies:
     synonym_property:
       - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
     base_uri:
-      - http://purl.obolibrary.org/ontology/PHI_
-    ontology_purl: file:/nfs/panda/ensembl/production/ensprod/obo_files/PHI.obo
+      - http://purl.obolibrary.org/obo/PHI_
+    ontology_purl: file:/nfs/panda/ensembl/production/ensprod/ontologies/phi/PHI.obo
 
-## DICOM
-
-  - id: dicom
-    preferredPrefix: DICOM
-    title: DICOM Controlled Terminology
-    uri: http://dicom.nema.org/resources/ontology/DCM/
-    description: "DICOM Controlled Terminology"
-    homepage: http://dicom.nema.org/medical/dicom/current/output/chtml/part16/chapter_D.html
-    mailing_list: dclunie@dclunie.com
-    label_property: http://www.w3.org/2004/02/skos/core#prefLabel
-    definition_property:
-      - http://www.w3.org/2004/02/skos/core#definition
-    synonym_property:
-      - http://www.w3.org/2004/02/skos/core#notation
-    base_uri:
-      - http://dicom.nema.org/resources/ontology/DCM/
-    reasoner: NONE
-    ontology_purl: ftp://medical.nema.org/medical/dicom/resources/ontology/dcm/dcm.owl
 
 ## MSIO
 
@@ -53,6 +35,44 @@ ontologies:
     reasoner: NONE
     ontology_purl: https://raw.githubusercontent.com/MSI-Metabolomics-Standards-Initiative/MSIO/master/releases/latest_release/MSIO-merged-reasoned.owl
 
+## DICOM 
+
+  - id: dicom
+    preferredPrefix: DICOM
+    title: DICOM Controlled Terminology
+    uri: http://dicom.nema.org/resources/ontology/DCM/
+    description: DICOM Controlled Terminology
+    homepage: http://dicom.nema.org/medical/dicom/current/output/chtml/part16/chapter_D.html
+    mailing_list: dclunie@dclunie.com
+    definition_property:
+      - http://www.w3.org/2004/02/skos/core#definition
+    label_property: http://www.w3.org/2004/02/skos/core#prefLabel
+    synonym_property:
+      - http://www.w3.org/2004/02/skos/core#altLabel
+    base_uri:
+      - http://dicom.nema.org/resources/ontology/DCM/
+    reasoner: none
+    oboSlims: false
+    ontology_purl : ftp://medical.nema.org/MEDICAL/Dicom/Resources/Ontology/DCM/dcm.owl
+
+## SGDIO 
+
+  - id: sdgio
+    preferredPrefix: SDGIO
+    title: Sustainable Development Goals Interface Ontology
+    uri: http://purl.unep.org/sdg/sdgio.owl
+    description: "An OBO-compliant ontology representing the entities referenced by the SDGs, their targets, and indicators."
+    homepage: https://github.com/SDG-InterfaceOntology/sdgio
+    mailing_list: https://github.com/SDG-InterfaceOntology/sdgio/issues
+    definition_property:
+      - http://purl.obolibrary.org/obo/IAO_0000115
+    synonym_property:
+      - http://www.geneontology.org/formats/oboInOWL#hasExactSynonym
+    base_uri:
+      - http://purl.unep.org/sdg/SDGIO_
+    oboSlims: false
+    ontology_purl: http://purl.unep.org/sdg/sdgio.owl
+
 ## Ensembl glossary
 
   - id: ensemblglossary
@@ -68,7 +88,7 @@ ontologies:
     base_uri:
       - http://ensembl.org/glossary/ENSGLOSS_
     reasoner: NONE
-    ontology_purl: https://raw.githubusercontent.com/simonjupp/ensembl-glossary/master/ensembl-glossary.owl
+    ontology_purl: https://raw.githubusercontent.com/Ensembl/ensembl-glossary/master/ensembl-glossary.owl
 
 ## EFO
 
@@ -83,8 +103,8 @@ ontologies:
       - http://purl.obolibrary.org/obo/IAO_0000115
       - http://www.ebi.ac.uk/efo/definition
     synonym_property:
-      - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
       - http://www.ebi.ac.uk/efo/alternative_term
+      - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
     hierarchical_property:
       - http://purl.obolibrary.org/obo/BFO_0000050
       - http://purl.obolibrary.org/obo/RO_0002202
@@ -259,7 +279,8 @@ ontologies:
     preferredPrefix: ENM
     title: eNanoMapper Ontology
     uri: http://purl.enanomapper.org/onto/enanomapper.owl
-    description: "The eNanoMapper project (www.enanomapper.net) is creating a pan-European computational infrastructure for toxicological data management for ENMs, based on semantic web standards and ontologies. This ontology is an application ontology targeting the full domain of nanomaterial safety assessment. It re-uses several other ontologies including the NPO, CHEMINF, ChEBI, and ENVO. "
+    description: "The eNanoMapper project (www.enanomapper.net) is creating a pan-European computational infrastructure for toxicological data management for ENMs, based on semantic web standards and ontologies. > This ontology is an application ontology targeting the f\
+ull domain of nanomaterial safety assessment. It re-uses several other ontologies including the NPO, CHEMINF, ChEBI, and ENVO. "
     homepage: http://www.enanomapper.net/
     mailing_list: https://github.com/enanomapper/ontologies
     definition_property:
@@ -285,7 +306,9 @@ ontologies:
     preferredPrefix: ATOL
     title: Animal Trait Ontology for Livestock
     uri: file:/C:/Lea/ontologies/versions%20ATOL/atol_v3.0.obo
-    description: "ATOL (Animal Trait Ontology for Livestock) is an ontology of characteristics defining phenotypes of livestock in their environment (EOL). ATOL aims to: - provide a reference ontology of phenotypic traits of farm animals for the international scientific and educational - communities, farmers, etc.; - deliver this reference ontology in a language which can be used by computers in order to support database management, semantic analysis and modeling; - represent traits as generic as possible for livestock vertebrates; - make the ATOL ontology as operational as possible and closely related to measurement techniques; - structure the ontology in relation to animal production."
+    description: "ATOL (Animal Trait Ontology for Livestock) is an ontology of characteristics defining phenotypes of livestock in their environment (EOL). ATOL aims to: - provide a reference ontology of phenotypic traits of farm animals for the international scientific\
+ and educational - communities, farmers, etc.; - deliver this reference ontology in a language which can be used by computers in order to support database management, semantic analysis and modeling; - represent traits as generic as possible for livestock vertebrates; - \
+make the ATOL ontology as operational as possible and closely related to measurement techniques; - structure the ontology in relation to animal production."
     homepage: http://www.atol-ontology.com
     mailing_list: pylebail@rennes.inra.fr
     definition_property:
@@ -331,27 +354,6 @@ ontologies:
       - http://purl.obolibrary.org/obo/LBO_
     oboSlims: false
     ontology_purl : http://data.bioontology.org/ontologies/LBO/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb
-
-## AncestrO
-
-  - id: ancestro
-    preferredPrefix: ancestro
-    title: Ancestry Ontology
-    uri: http://www.ebi.ac.uk/ancestro
-    description: "The Ancestry Ontology (Ancestro) provides a systematic description of the ancestry concepts used in the NHGRI-EBI Catalog of published genome-wide association studies. It includes a list of countries, regions and major areas (essentially continents), as well as a fairly exhaustive list of country- or region-specific ancestral groups, uncategorised ancestral groups and population isolates."
-    homepage: https://github.com/EBISPOT/ancestro/
-    mailing_list:
-    definition_property:
-      - http://purl.obolibrary.org/obo/IAO_0000115
-    synonym_property:
-      - http://purl.obolibrary.org/obo/IAO_0000118
-    hierarchical_property:
-      - http://purl.obolibrary.org/obo/BFO_0000050
-    base_uri:
-      - http://www.ebi.ac.uk/ancestro/ancestro_
-    oboSlims: false
-    reasoner: OWL2
-    ontology_purl : https://raw.githubusercontent.com/EBISPOT/ancestro/master/ancestro.owl
 
 ## GAZ overide
 
@@ -430,15 +432,6 @@ ontologies:
   - id: mf
     title: Mental Functioning Ontology
 
-## MI overide
-
-  - id: mi
-    title: Molecular Interactions
-    is_foundry: true
-    ontology_purl: http://purl.obolibrary.org/obo/mi.owl
-    hierarchical_property:
-      - http://purl.obolibrary.org/obo/BFO_0000050
-
 ## MAMO overide
 
   - id: mamo
@@ -452,26 +445,6 @@ ontologies:
   - id: mfoem
     title: Emotion Ontology
 
-## NCIt
-
-  - id: ncit
-    preferredPrefix: NCIt
-    title: NCI Thesaurus
-    uri: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
-    description: "NCI Thesaurus, a controlled vocabulary in support of NCI administrative and scientific activities. Produced by the Enterprise Vocabulary System (EVS), a project by the NCI Center for Biomedical Informatics and Information Technology. National Cancer Institute, National Institutes of Health, Bethesda, MD 20892, U.S.A."
-    homepage: https://cbiit.nci.nih.gov
-    mailing_list: https://cbiit.nci.nih.gov/contact
-    definition_property:
-      - http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97
-    synonym_property:
-      - http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90
-    hierarchical_property:
-      - http://purl.obolibrary.org/obo/BFO_0000050
-    base_uri:
-      - http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#
-    oboSlims: false
-    reasoner: EL
-    ontology_purl : http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
 
 ## bao
 
@@ -526,7 +499,8 @@ ontologies:
     preferredPrefix: UNIMOD
     title: Unimod protein modification database for mass spectrometry
     uri: http://www.unimod.org/obo/unimod.obo
-    description: "Unimod is a community supported, comprehensive database of protein modifications for mass spectrometry applications. That is, accurate and verifiable values, derived from elemental compositions, for the mass differences introduced by all types of natural and artificial modifications. Other important information includes any mass change, (neutral loss), that occurs during MS/MS analysis, and site specificity, (which residues are susceptible to modification and any constraints on the position of the modification within the protein or peptide)."
+    description: "Unimod is a community supported, comprehensive database of protein modifications for mass spectrometry applications. That is, accurate and verifiable values, derived from elemental compositions, for the mass differences introduced by all types of natural and artificial modifications. Other important information includes any mass change, (neutral loss), that occurs during MS/MS analysis, an
+d site specificity, (which residues are susceptible to modification and any constraints on the position of the modification within the protein or peptide)."
     homepage: http://www.unimod.org/
     mailing_list: psidev-ms-vocab@lists.sourceforge.net
     base_uri:
@@ -548,38 +522,54 @@ ontologies:
       - http://scdontology.h3abionet.org/ontology/SCDO_
     oboSlims: false
     reasoner: NONE
-    ontology_purl : https://raw.githubusercontent.com/scdodev/scdo-ontology/master/data/scdo.owl
+    ontology_purl : https://raw.githubusercontent.com/scdodev/scdo-ontology/master/scdo.owl
 
-## overide for mondo
+## overide for mondo 
 
   - id: mondo
     ontology_purl: http://purl.obolibrary.org/obo/mondo.obo
 
-## mesh
+## overide for mi - todo remove after obo lib updates
 
-  - id: mesh
-    preferredPrefix: MESH
-    title: Medical Subject Headings
-    uri: ftp://ftp.nlm.nih.gov/online/mesh/rdf/
-    description: "Medical Subject Headings (MeSH) RDF is a linked data representation of the MeSH biomedical vocabulary produced by the National Library of Medicine. MeSH RDF includes a downloadable file in RDF N-Triples format, a SPARQL query editor, a SPARQL endpoint (API), and a RESTful interface for retrieving MeSH data."
-    homepage: https://id.nlm.nih.gov/mesh/
-    mailing_list: https://github.com/HHS/meshrdf/issues
-    synonym_property:
-      - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
-    hierarchical_property:
-      - http://purl.obolibrary.org/obo/BFO_0000050
-    base_uri:
-      - http://id.nlm.nih.gov/mesh/2017/
-    oboSlims: false
-    reasoner: NONE
-    ontology_purl : https://www.ebi.ac.uk/~jupp/downloads/mesh.ttl
+  - id: mi
+    ontology_purl: https://raw.githubusercontent.com/HUPO-PSI/psi-mi-CV/master/psi-mi.obo
+
+## overide for genepio
+
+  - id: genepio
+    ontology_purl: https://raw.githubusercontent.com/GenEpiO/genepio/master/src/ontology/genepio-merged-cardfix.owl
 
 ## nmrCV
+
   - id: nmrCV
     preferredPrefix: NMR
     title: nuclear magnetic resonance CV
     uri: http://nmrML.org/nmrCV
-    description: "This artefact is an MSI-approved controlled vocabulary primarily developed under COSMOS EU and PhenoMeNal EU governance. The nmrCV is supporting the nmrML XML format with standardized terms. nmrML is a vendor agnostic open access NMR raw data standard. Its primaly role is analogous to the mzCV for the PSI-approved mzML XML format. It uses BFO2.0 as its Top level. This CV was derived from two predecessors (The NMR CV from the David Wishart Group, developed by Joseph Cruz) and the MSI nmr CV developed by Daniel Schober at the EBI.  This simple taxonomy of terms (no DL semantics used) serves the nuclear magnetic resonance markup language (nmrML) with meaningful descriptors to amend the nmrML xml file with CV terms. Metabolomics scientists are encouraged to use this CV to annotrate their raw and experimental context data, i.e. within nmrML. The approach to have an exchange syntax mixed of an xsd and CV stems from the PSI mzML effort. The reason to branch out from an xsd into a CV is, that in areas where the terminology is likely to change faster than the nmrML xsd could be updated and aligned, an externally and decentrallised maintained CV can accompensate for such dynamics in a more flexible way. A second reason for this set-up is that semantic validity of CV terms used in an nmrML XML instance (allowed CV terms, position/relation to each other, cardinality) can be validated by rule-based proprietary validators: By means of cardinality specifications and XPath expressions defined in an XML mapping file (an instances of the CvMappingRules.xsd ), one can define what ontology terms are allowed in a specific location of the data model."
+    description: "This artefact is an MSI-approved 
+controlled vocabulary primarily developed under COSMOS EU and PhenoMeNal 
+EU governance. The nmrCV is supporting the nmrML XML format with 
+standardized terms. nmrML is a vendor agnostic open access NMR raw data 
+standard. Its primaly role is analogous to the mzCV for the PSI-approved 
+mzML XML format. It uses BFO2.0 as its Top level.
+ This CV was derived from two predecessors (The NMR CV from the David 
+Wishart Group, developed by Joseph Cruz) and the MSI nmr CV developed by 
+Daniel Schober at the EBI.  This simple taxonomy of terms (no DL 
+semantics used) serves the nuclear magnetic resonance markup language 
+(nmrML) with meaningful descriptors to amend the nmrML xml file with CV 
+terms. Metabolomics scientists are encouraged to use this CV to 
+annotrate their raw and experimental context data, i.e. within nmrML. 
+The approach to have an exchange syntax mixed of an xsd and CV stems 
+from the PSI mzML effort. The reason to branch out from an xsd into a CV 
+is, that in areas where the terminology is likely to change faster than 
+the nmrML xsd could be updated and aligned, an externally and 
+decentrallised maintained CV can accompensate for such dynamics in a 
+more flexible way. A second reason for this set-up is that semantic 
+validity of CV terms used in an nmrML XML instance (allowed CV terms, 
+position/relation to each other, cardinality) can be validated by 
+rule-based proprietary validators:  By means of cardinality 
+specifications and XPath expressions defined in an XML mapping file (an 
+instances of the CvMappingRules.xsd ), one can define what ontology 
+terms are allowed in a specific location of the data model."
     homepage: http://nmrml.org/cv/
     mailing_list: https://groups.google.com/forum/?hl=en#!forum/nmrml/join
     definition_property:
@@ -595,94 +585,50 @@ ontologies:
     reasoner: NONE
     ontology_purl : http://nmrml.org/cv/stable/nmrCV.owl
 
-## icd10cm
 
-  - id: icd10cm
-    preferredPrefix: ICD10CM
-    title: Internatinal Classification of Diseases Clinical Modification (10th edition)
-    uri: https://identifiers.org/icd10cm
-    homepage: https://www.cdc.gov/nchs/icd/icd10cm.htm
-    label_property: http://www.w3.org/2004/02/skos/core#prefLabel
+## SBO 
+
+  - id: sbo
+    title: Systems Biology Ontology
     definition_property:
-      - http://www.w3.org/2004/02/skos/core#definition
+      - http://www.w3.org/2000/01/rdf-schema#comment
+
+
+# add BFO part_of as local term in RO
+## Relations Ontology
+
+  - id: ro
+    base_uri:
+     - http://purl.obolibrary.org/obo/BFO_0000050
+     - http://purl.obolibrary.org/obo/RO_
+
+# set the base URI for NCBI taxon
+## NCBI taxonomy 
+
+  - id: ncbitaxon
+    base_uri:
+     - http://purl.obolibrary.org/obo/NCBITaxon_
+
+## AFO
+  
+  - id: afo
+    preferredPrefix: AFO
+    title: Allotrope Merged Ontology Suite
+    description: Allotrope Merged Ontology Suite
+    uri: http://purl.allotrope.org/voc/afo/merged/REC/2018/11
+    base_uri:
+      - http://purl.allotrope.org/ontologies
+    label_property: http://www.w3.org/2004/02/skos/core#prefLabel
     synonym_property:
       - http://www.w3.org/2004/02/skos/core#altLabel
-    base_uri:
-      - http://identifiers.org/icd10cm/
-    oboSlims: false
-    reasoner: NONE
-    ontology_purl : file:///nfs/spot/data/test/ols/umls/ICD10CM.ttl
-
-## icd9cm
-
-  - id: icd9cm
-    preferredPrefix: ICD9CM
-    title: Internatinal Classification of Diseases Clinical Modification (9th edition)
-    uri: https://identifiers.org/icd9cm
-    homepage: https://www.cdc.gov/nchs/icd/icd9cm.htm
-    label_property: http://www.w3.org/2004/02/skos/core#prefLabel
     definition_property:
       - http://www.w3.org/2004/02/skos/core#definition
-    synonym_property:
-      - http://www.w3.org/2004/02/skos/core#altLabel
-    base_uri:
-      - http://identifiers.org/icd9cm/
+      - http://purl.obolibrary.org/obo/IAO_0000115
+    reasoner: EL
     oboSlims: false
-    reasoner: NONE
-    ontology_purl : file:///nfs/spot/data/test/ols/umls/ICD9CM.ttl
+    ontology_purl : http://afo-ols.semanticsfirst.com/ontologies/afo
 
-## snomedct
-
-  - id: snomedct
-    preferredPrefix: SNOMEDCT
-    title: SNOMED CT
-    uri: https://identifiers.org/snomedct
-    label_property: http://www.w3.org/2004/02/skos/core#prefLabel
-    definition_property:
-      - http://www.w3.org/2004/02/skos/core#definition
-    synonym_property:
-      - http://www.w3.org/2004/02/skos/core#altLabel
-    base_uri:
-      - http://identifiers.org/snomedct/
-    oboSlims: false
-    reasoner: NONE
-    ontology_purl : file:///nfs/spot/data/test/ols/umls/SNOMEDCT.ttl
-
-## meddra
-
-  - id: meddra
-    preferredPrefix: MedDRA
-    title: MedDRA
-    uri: https://identifiers.org/meddra
-    label_property: http://www.w3.org/2004/02/skos/core#prefLabel
-    definition_property:
-      - http://www.w3.org/2004/02/skos/core#definition
-    synonym_property:
-      - http://www.w3.org/2004/02/skos/core#altLabel
-    base_uri:
-      - http://identifiers.org/meddra/
-    oboSlims: false
-    reasoner: NONE
-    ontology_purl : file:///nfs/spot/data/test/ols/umls/MEDDRA.ttl
-
-## omim
-
-  - id: omim
-    preferredPrefix: OMIM
-    title: OMIM
-    uri: https://identifiers.org/omim
-    label_property: http://www.w3.org/2004/02/skos/core#prefLabel
-    definition_property:
-      - http://www.w3.org/2004/02/skos/core#definition
-    synonym_property:
-      - http://www.w3.org/2004/02/skos/core#altLabel
-    base_uri:
-      - http://identifiers.org/omim/
-    oboSlims: false
-    reasoner: NONE
-    ontology_purl : file:///nfs/spot/data/test/ols/umls/OMIM.ttl
-
-##hpath
+#hpath
 
   - id: hpath
     preferredPrefix: MC
@@ -703,25 +649,7 @@ ontologies:
     reasoner: None
     ontology_purl: https://raw.githubusercontent.com/Novartis/hpath/master/src/hpath.obo
 
-## AFO
-  - id: afo
-    preferredPrefix: AFO
-    title: Allotrope Merged Ontology Suite
-    description: Allotrope Merged Ontology Suite
-    uri: http://purl.allotrope.org/voc/afo/merged/REC/2018/11
-    base_uri:
-      - http://purl.allotrope.org/ontologies
-    label_property: http://www.w3.org/2004/02/skos/core#prefLabel
-    synonym_property:
-      - http://www.w3.org/2004/02/skos/core#altLabel
-    definition_property:
-      - http://www.w3.org/2004/02/skos/core#definition
-      - http://purl.obolibrary.org/obo/IAO_0000115
-    reasoner: EL
-    oboSlims: false
-    ontology_purl : http://afo-ols.semanticsfirst.com/ontologies/afo
-
-## Override for DUO
+## DUO override
   - id: duo
     ontology_purl: http://purl.obolibrary.org/obo/duo.owl
     preferred_root_term:
@@ -729,7 +657,8 @@ ontologies:
       - http://purl.obolibrary.org/obo/DUO_0000017
       - http://purl.obolibrary.org/obo/OBI_0000066
 
-## SRAO
+  ## SRAO
+
   - id: srao
     preferredPrefix: SRAO
     title: FAIRsharing Subject Ontology (SRAO)
@@ -750,9 +679,9 @@ ontologies:
       - http://www.fairsharing.org/ontology/subject/SRAO_0000317
       - http://www.fairsharing.org/ontology/subject/SRAO_0000272
       - http://www.fairsharing.org/ontology/subject/SRAO_0000292
+      - http://www.fairsharing.org/ontology/subject/SRAO_0000268
     base_uri:
       - http://www.fairsharing.org/ontology/subject
     reasoner: OWL2
     oboSlims: false
     ontology_purl : https://github.com/FAIRsharing/subject-ontology/raw/master/releases/SRAO.owl
-
