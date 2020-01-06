@@ -111,4 +111,7 @@ ontologies:
     oboSlims: false
     ontology_purl : https://github.com/FAIRsharing/subject-ontology/raw/master/releases/SRAO.owl
 
+  ## overide for mondo
 
+  - id: mondo
+    ontology_purl: http://purl.obolibrary.org/obo/mondo.obo

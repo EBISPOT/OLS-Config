@@ -204,3 +204,40 @@ ontologies:
   products:
     - {id: swo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/swo.owl'}
   title: Software ontology
+
+
+- activity_status: active
+  browsers:
+    - {label: Monarch, title: Monarch Initiative Disease Browser, url: 'https://monarchinitiative.org/disease/MONDO:0019609'}
+  canonical: mondo.owl
+  contact: {email: vasilevs@ohsu.edu, github: nicolevasilevsky, label: Nicole Vasilevsky}
+  description: An ontology that harmonizes multiple disease resources.
+  domain: disease
+  homepage: https://monarch-initiative.github.io/mondo
+  id: mondo
+  label: Mondo
+  layout: ontology_detail
+  license: {label: CC BY 3.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+            url: 'http://creativecommons.org/licenses/by/3.0/'}
+  mailing_list: https://groups.google.com/group/mondo-users
+  ontology_purl: http://purl.obolibrary.org/obo/mondo.owl
+  products:
+    - {description: 'Complete ontology, plus inter-ontology equivalence axioms. Uses
+  MONDO IDs.', format: owl-rdf/xml, id: mondo.owl, is_canonical: true, ontology_purl: 'http://purl.obolibrary.org/obo/mondo.owl',
+       title: Main OWL edition}
+    - {derived_from: mondo.owl, description: 'As OWL, but omits equivalence axioms.
+  xrefs can be used as proxy for equivalence. Uses Mondo IDs', format: obo, id: mondo.obo,
+       ontology_purl: 'http://purl.obolibrary.org/obo/mondo.obo', title: obo-format edition}
+    - {derived_from: mondo.owl, description: Equivalent to the OWL edition, format: obo,
+       id: mondo.json, ontology_purl: 'http://purl.obolibrary.org/obo/mondo.json', title: json
+                                                                                     edition}
+  taxon: {id: 'NCBITaxon:33208', label: Metazoa}
+  title: Mondo Disease Ontology
+  tracker: https://github.com/monarch-initiative/mondo-build/issues
+  usages:
+    - description: Mondo is used by the Monarch Initiative for disease annotations.
+      examples:
+        - {url: 'https://monarchinitiative.org/phenotype/HP:0001300#diseases'}
+      reference: https://academic.oup.com/nar/article/45/D1/D712/2605791
+      type: annotation
+      user: https://monarchinitiative.org/
