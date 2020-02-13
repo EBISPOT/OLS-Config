@@ -685,3 +685,22 @@ terms are allowed in a specific location of the data model."
     reasoner: OWL2
     oboSlims: false
     ontology_purl : https://github.com/FAIRsharing/subject-ontology/raw/master/releases/SRAO.owl
+
+  ## HCAO
+  - id: hcao
+    preferredPrefix: HCAO
+    title: Human Cell Atlas Ontology
+    uri: http://ontology.data.humancellatlas.org/ontologies/hcao
+    base_uri:
+      - http://ontology.data.humancellatlas.org/ontologies/HCA_
+      - http://purl.obolibrary.org/obo/UBERON_
+      - http://purl.obolibrary.org/obo/CL_
+      - http://purl.obolibrary.org/obo/HsapDv_
+    description: "Application ontology for human cell types, anatomy and development stages for the Human Cell Atlas."
+    definition_property:
+      - http://purl.obolibrary.org/obo/IAO_0000115
+    synonym_property:
+      - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+    reasoner: EL
+    oboSlims: false
+    ontology_purl : https://raw.githubusercontent.com/HumanCellAtlas/ontology/master/hcao.owl
