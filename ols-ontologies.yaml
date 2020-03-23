@@ -380,9 +380,20 @@ ontologies:
     is_foundry: true
     ontology_purl: http://purl.obolibrary.org/obo/bto.owl
     hierarchical_property:
+      - http://purl.obolibrary.org/obo/TEMP#part_of
+      - http://purl.obolibrary.org/obo/TEMP#develops_from
       - http://purl.obolibrary.org/obo/BFO_0000050
+      - http://purl.obolibrary.org/obo/RO_0002202
       - http://purl.obolibrary.org/obo/bto#develops_from
       - http://purl.obolibrary.org/obo/bto#related_to
+
+## Plana override
+
+  - id: plana
+    is_foundry: true
+    ontology_purl: http://purl.obolibrary.org/obo/plana.owl
+    synonym_property:
+      - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
 
 ## ProbOnto
 
