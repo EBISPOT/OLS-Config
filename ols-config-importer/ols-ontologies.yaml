@@ -115,3 +115,25 @@ ontologies:
 
   - id: mondo
     ontology_purl: http://purl.obolibrary.org/obo/mondo.obo
+
+  - id: amphx
+    preferredPrefix: AMPHX
+    title: Amphioxus Development and Anatomy Ontology
+    definition_property:
+      - http://purl.obolibrary.org/obo/IAO_0000115
+    synonym_property:
+      - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+    base_uri:
+      - http://purl.obolibrary.org/obo/AMPHX_
+    ontology_purl: https://raw.githubusercontent.com/EBISPOT/amphx_ontology/master/amphx.owl
+
+  - id: clth
+    preferredPrefix: CLTH
+    title: Clytia hemisphaerica Development and Anatomy Ontology
+    definition_property:
+      - http://purl.obolibrary.org/obo/IAO_0000115
+    synonym_property:
+      - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+    base_uri:
+      - http://purl.obolibrary.org/obo/CLTH_
+    ontology_purl: https://raw.githubusercontent.com/EBISPOT/clth_ontology/master/clth.owl
