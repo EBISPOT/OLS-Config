@@ -176,7 +176,7 @@ ontologies:
       - http://edamontology.org/format_
       - http://edamontology.org/identifier_
     oboSlims: false
-    ontology_purl : http://edamontology.org/EDAM.owl   ### This is the download URL
+    ontology_purl : https://raw.githubusercontent.com/edamontology/edamontology/master/releases/EDAM.owl
 
 ## CCO
 
