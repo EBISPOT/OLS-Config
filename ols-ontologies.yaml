@@ -535,11 +535,6 @@ d site specificity, (which residues are susceptible to modification and any cons
   - id: mi
     ontology_purl: https://raw.githubusercontent.com/HUPO-PSI/psi-mi-CV/master/psi-mi.obo
 
-## overide for genepio
-
-  - id: genepio
-    ontology_purl: https://raw.githubusercontent.com/GenEpiO/genepio/master/src/ontology/genepio-merged-cardfix.owl
-
 ## nmrCV
 
   - id: nmrCV
