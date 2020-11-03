@@ -35,7 +35,7 @@ ontologies:
     reasoner: NONE
     ontology_purl: https://raw.githubusercontent.com/MSI-Metabolomics-Standards-Initiative/MSIO/master/releases/latest_release/MSIO-merged-reasoned.owl
 
-## DICOM 
+## DICOM
 
   - id: dicom
     preferredPrefix: DICOM
@@ -55,7 +55,7 @@ ontologies:
     oboSlims: false
     ontology_purl : ftp://medical.nema.org/MEDICAL/Dicom/Resources/Ontology/DCM/dcm.owl
 
-## SGDIO 
+## SGDIO
 
   - id: sdgio
     preferredPrefix: SDGIO
@@ -124,7 +124,7 @@ ontologies:
     description: "The Orphanet Rare Disease ontology (ORDO) is jointly developed by Orphanet and the EBI to provide a structured vocabulary for rare diseases capturing relationships between diseases, genes and other relevant features which will form a useful resource for the computational analysis of rare diseases.
                   It derived from the Orphanet database (www.orpha.net ) , a multilingual database dedicated to rare diseases populated from literature and validated by international experts.
                   It integrates a nosology (classification of rare diseases), relationships (gene-disease relations, epiemological data) and connections with other terminologies (MeSH, UMLS, MedDRA),databases (OMIM, UniProtKB, HGNC, ensembl, Reactome, IUPHAR, Geantlas) or classifications (ICD10)."
-    title: Orphanet Rare Disease Ontolog
+    title: Orphanet Rare Disease Ontology
     uri: http://www.orpha.net/ontology/orphanet.owl
     definition_property:
       - http://www.ebi.ac.uk/efo/definition
@@ -176,7 +176,7 @@ ontologies:
       - http://edamontology.org/format_
       - http://edamontology.org/identifier_
     oboSlims: false
-    ontology_purl : https://raw.githubusercontent.com/edamontology/edamontology/master/releases/EDAM.owl   ### This is the download URL
+    ontology_purl : https://raw.githubusercontent.com/edamontology/edamontology/master/releases/EDAM.owl
 
 ## CCO
 
@@ -199,7 +199,7 @@ ontologies:
 
 ## ReXo
 
-  - id: rexo 
+  - id: rexo
     preferredPrefix: ReXO
     title: Regulation of Gene Expression Ontology
     uri: http://www.bio.ntnu.no/ontology/ReXO/rexo.owl
@@ -383,6 +383,7 @@ make the ATOL ontology as operational as possible and closely related to measure
     ontology_purl: http://purl.obolibrary.org/obo/bto.owl
     hierarchical_property:
       - http://purl.obolibrary.org/obo/BFO_0000050
+      - http://purl.obolibrary.org/obo/RO_0002202
       - http://purl.obolibrary.org/obo/bto#develops_from
       - http://purl.obolibrary.org/obo/bto#related_to
 
@@ -524,20 +525,15 @@ d site specificity, (which residues are susceptible to modification and any cons
     reasoner: NONE
     ontology_purl : https://raw.githubusercontent.com/scdodev/scdo-ontology/master/scdo.owl
 
-## overide for mondo 
+## overide for mondo
 
-  - id: mondo
-    ontology_purl: http://purl.obolibrary.org/obo/mondo.obo
+#  - id: mondo
+#    ontology_purl: http://purl.obolibrary.org/obo/mondo.obo
 
 ## overide for mi - todo remove after obo lib updates
 
   - id: mi
     ontology_purl: https://raw.githubusercontent.com/HUPO-PSI/psi-mi-CV/master/psi-mi.obo
-
-## overide for genepio
-
-  - id: genepio
-    ontology_purl: https://raw.githubusercontent.com/GenEpiO/genepio/master/src/ontology/genepio-merged-cardfix.owl
 
 ## nmrCV
 
@@ -545,30 +541,30 @@ d site specificity, (which residues are susceptible to modification and any cons
     preferredPrefix: NMR
     title: nuclear magnetic resonance CV
     uri: http://nmrML.org/nmrCV
-    description: "This artefact is an MSI-approved 
-controlled vocabulary primarily developed under COSMOS EU and PhenoMeNal 
-EU governance. The nmrCV is supporting the nmrML XML format with 
-standardized terms. nmrML is a vendor agnostic open access NMR raw data 
-standard. Its primaly role is analogous to the mzCV for the PSI-approved 
+    description: "This artefact is an MSI-approved
+controlled vocabulary primarily developed under COSMOS EU and PhenoMeNal
+EU governance. The nmrCV is supporting the nmrML XML format with
+standardized terms. nmrML is a vendor agnostic open access NMR raw data
+standard. Its primaly role is analogous to the mzCV for the PSI-approved
 mzML XML format. It uses BFO2.0 as its Top level.
- This CV was derived from two predecessors (The NMR CV from the David 
-Wishart Group, developed by Joseph Cruz) and the MSI nmr CV developed by 
-Daniel Schober at the EBI.  This simple taxonomy of terms (no DL 
-semantics used) serves the nuclear magnetic resonance markup language 
-(nmrML) with meaningful descriptors to amend the nmrML xml file with CV 
-terms. Metabolomics scientists are encouraged to use this CV to 
-annotrate their raw and experimental context data, i.e. within nmrML. 
-The approach to have an exchange syntax mixed of an xsd and CV stems 
-from the PSI mzML effort. The reason to branch out from an xsd into a CV 
-is, that in areas where the terminology is likely to change faster than 
-the nmrML xsd could be updated and aligned, an externally and 
-decentrallised maintained CV can accompensate for such dynamics in a 
-more flexible way. A second reason for this set-up is that semantic 
-validity of CV terms used in an nmrML XML instance (allowed CV terms, 
-position/relation to each other, cardinality) can be validated by 
-rule-based proprietary validators:  By means of cardinality 
-specifications and XPath expressions defined in an XML mapping file (an 
-instances of the CvMappingRules.xsd ), one can define what ontology 
+ This CV was derived from two predecessors (The NMR CV from the David
+Wishart Group, developed by Joseph Cruz) and the MSI nmr CV developed by
+Daniel Schober at the EBI.  This simple taxonomy of terms (no DL
+semantics used) serves the nuclear magnetic resonance markup language
+(nmrML) with meaningful descriptors to amend the nmrML xml file with CV
+terms. Metabolomics scientists are encouraged to use this CV to
+annotrate their raw and experimental context data, i.e. within nmrML.
+The approach to have an exchange syntax mixed of an xsd and CV stems
+from the PSI mzML effort. The reason to branch out from an xsd into a CV
+is, that in areas where the terminology is likely to change faster than
+the nmrML xsd could be updated and aligned, an externally and
+decentrallised maintained CV can accompensate for such dynamics in a
+more flexible way. A second reason for this set-up is that semantic
+validity of CV terms used in an nmrML XML instance (allowed CV terms,
+position/relation to each other, cardinality) can be validated by
+rule-based proprietary validators:  By means of cardinality
+specifications and XPath expressions defined in an XML mapping file (an
+instances of the CvMappingRules.xsd ), one can define what ontology
 terms are allowed in a specific location of the data model."
     homepage: http://nmrml.org/cv/
     mailing_list: https://groups.google.com/forum/?hl=en#!forum/nmrml/join
@@ -586,7 +582,7 @@ terms are allowed in a specific location of the data model."
     ontology_purl : http://nmrml.org/cv/stable/nmrCV.owl
 
 
-## SBO 
+## SBO
 
   - id: sbo
     title: Systems Biology Ontology
@@ -603,14 +599,14 @@ terms are allowed in a specific location of the data model."
      - http://purl.obolibrary.org/obo/RO_
 
 # set the base URI for NCBI taxon
-## NCBI taxonomy 
+## NCBI taxonomy
 
   - id: ncbitaxon
     base_uri:
      - http://purl.obolibrary.org/obo/NCBITaxon_
 
 ## AFO
-  
+
   - id: afo
     preferredPrefix: AFO
     title: Allotrope Merged Ontology Suite
@@ -686,6 +682,53 @@ terms are allowed in a specific location of the data model."
     oboSlims: false
     ontology_purl : https://github.com/FAIRsharing/subject-ontology/raw/master/releases/SRAO.owl
 
+  ## HCAO
+  - id: hcao
+    preferredPrefix: HCAO
+    title: Human Cell Atlas Ontology
+    uri: http://ontology.data.humancellatlas.org/ontologies/hcao
+    base_uri:
+      - http://ontology.data.humancellatlas.org/ontologies/HCA_
+    description: "Application ontology for human cell types, anatomy and development stages for the Human Cell Atlas."
+    definition_property:
+      - http://purl.obolibrary.org/obo/IAO_0000115
+    synonym_property:
+      - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+    reasoner: EL
+    oboSlims: false
+    ontology_purl : https://raw.githubusercontent.com/HumanCellAtlas/ontology/master/hcao.owl
+
+  - id: amphx
+    preferredPrefix: AMPHX
+    title: Amphioxus Development and Anatomy Ontology
+    definition_property:
+      - http://purl.obolibrary.org/obo/IAO_0000115
+    synonym_property:
+      - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+    base_uri:
+      - http://purl.obolibrary.org/obo/AMPHX_
+    ontology_purl: https://raw.githubusercontent.com/EBISPOT/amphx_ontology/master/amphx.owl
+
+  - id: clyh
+    preferredPrefix: CLYH
+    title: Clytia hemisphaerica Development and Anatomy Ontology
+    definition_property:
+      - http://purl.obolibrary.org/obo/IAO_0000115
+    synonym_property:
+      - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+    base_uri:
+      - http://purl.obolibrary.org/obo/CLYH_
+    ontology_purl: https://raw.githubusercontent.com/EBISPOT/clyh_ontology/master/clyh.owl
+
+# Plana override
+  - id: plana
+    is_foundry: true
+    ontology_purl: http://purl.obolibrary.org/obo/plana.owl
+    synonym_property:
+      - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+
+
+
   - id: idocovid19
     preferredPrefix: IDO-COVID-19
     title: The COVID-19 Infectious Disease Ontology
@@ -724,3 +767,63 @@ terms are allowed in a specific location of the data model."
     reasoner: OWL2
     ontology_purl : https://raw.githubusercontent.com/infectious-disease-ontology-extensions/ido-virus/master/ontology/vido.owl
 
+  - id: bcio
+    preferredPrefix: BCIO
+    title: The Behaviour Change Intervention Ontology
+    uri: http://humanbehaviourchange.org/ontology/bcio.owl
+    description: "The Behaviour Change Intervention Ontology is an ontology for all aspects of human behaviour change interventions and their evaluation."
+    homepage: https://www.humanbehaviourchange.org/
+    definition_property:
+      - http://purl.obolibrary.org/obo/IAO_0000115
+    synonym_property:
+      - http://purl.obolibrary.org/obo/IAO_0000118
+    hierarchical_property:
+      - http://purl.obolibrary.org/obo/BFO_0000050
+    base_uri:
+      - http://humanbehaviourchange.org/ontology
+    oboSlims: false
+    reasoner: OWL2
+    ontology_purl : http://humanbehaviourchange.org/ontology/bcio.owl
+
+  - id: covoc
+    preferredPrefix: COVOC
+    title: COVID-19 Vocabulary Ontology
+    uri: http://purl.obolibrary.org/obo/covoc.owl
+    description: "The COVID-19 Vocabulary (COVoc) is an ontology containing terms related to the research of the COVID-19 pandemic. This includes host organisms, pathogenicity, gene and gene products, barrier gestures, treatments and more."
+    homepage: https://github.com/EBISPOT/covoc
+    definition_property:
+      - http://purl.obolibrary.org/obo/IAO_0000115
+    synonym_property:
+      - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+    hierarchical_property:
+      - http://purl.obolibrary.org/obo/BFO_0000050
+    base_uri:
+      - http://purl.obolibrary.org/obo/COVOC_
+    oboSlims: false
+    reasoner: OWL2
+    ontology_purl : https://github.com/EBISPOT/covoc/releases/download/current/covoc.owl
+
+
+## OM
+
+  - id: om
+    preferredPrefix: OM
+    title: Ontology of units of Measure (OM)
+    uri: http://www.wurvoc.org/vocabularies/om-2.0/
+    description: "The OM ontology provides classes, instances, and properties that represent the different concepts used for defining and using measures and units. It includes, for instance, common units such as the SI units meter and kilogram, but also units from other systems of units such as the mile or nautical mile. For many application areas it includes more specific units and quantities, such as the unit of the Hubble constant: km/s/Mpc, or the quantity vaselife.  OM defines the complete set of concepts in the domain as distinguished in the textual standards. As a result the ontology can answer a wider range of competency questions than the existing approaches do. The following application areas are supported by OM:  Geometry; Mechanics; Thermodynamics; Electromagnetism; Fluid mechanics; Chemical physics; Photometry; Radiometry and Radiobiology; Nuclear physics; Astronomy and Astrophysics; Cosmology; Earth science; Meteorology; Material science; Microbiology; Economics; Information technology; Typography; Shipping; Food engineering; Post-harvest; technology; Dynamics of texture and taste; Packaging"
+    homepage: https://github.com/HajoRijgersberg/OM
+    mailing_list: hajo.rijgersberg@wur.nl
+    definition_property:
+      - http://purl.obolibrary.org/obo/IAO_0000115
+    synonym_property:
+      - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+    hierarchical_property:
+      - http://purl.obolibrary.org/obo/BFO_0000050
+      - http://purl.obolibrary.org/obo/RO_0002202
+    hidden_property:
+      - http://www.ebi.ac.uk/efo/has_flag
+    base_uri:
+      - http://www.wurvoc.org/vocabularies/om-2.0/
+    reasoner: OWL2
+    oboSlims: false
+    ontology_purl : https://github.com/HajoRijgersberg/OM/blob/master/om-2.0.rdf
