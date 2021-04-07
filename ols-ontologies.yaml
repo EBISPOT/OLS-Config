@@ -2,6 +2,14 @@
 
 ontologies:
 
+## GO override
+  - id: go
+    reasoner: EL
+
+## MONDO override
+  - id: mondo
+    reasoner: EL
+
 ## PHI
 
   - id: phi
@@ -35,7 +43,7 @@ ontologies:
     reasoner: NONE
     ontology_purl: https://raw.githubusercontent.com/MSI-Metabolomics-Standards-Initiative/MSIO/master/releases/latest_release/MSIO-merged-reasoned.owl
 
-## DICOM 
+## DICOM
 
   - id: dicom
     preferredPrefix: DICOM
@@ -55,7 +63,7 @@ ontologies:
     oboSlims: false
     ontology_purl : ftp://medical.nema.org/MEDICAL/Dicom/Resources/Ontology/DCM/dcm.owl
 
-## SGDIO 
+## SGDIO
 
   - id: sdgio
     preferredPrefix: SDGIO
@@ -124,7 +132,7 @@ ontologies:
     description: "The Orphanet Rare Disease ontology (ORDO) is jointly developed by Orphanet and the EBI to provide a structured vocabulary for rare diseases capturing relationships between diseases, genes and other relevant features which will form a useful resource for the computational analysis of rare diseases.
                   It derived from the Orphanet database (www.orpha.net ) , a multilingual database dedicated to rare diseases populated from literature and validated by international experts.
                   It integrates a nosology (classification of rare diseases), relationships (gene-disease relations, epiemological data) and connections with other terminologies (MeSH, UMLS, MedDRA),databases (OMIM, UniProtKB, HGNC, ensembl, Reactome, IUPHAR, Geantlas) or classifications (ICD10)."
-    title: Orphanet Rare Disease Ontolog
+    title: Orphanet Rare Disease Ontology
     uri: http://www.orpha.net/ontology/orphanet.owl
     definition_property:
       - http://www.ebi.ac.uk/efo/definition
@@ -199,7 +207,7 @@ ontologies:
 
 ## ReXo
 
-  - id: rexo 
+  - id: rexo
     preferredPrefix: ReXO
     title: Regulation of Gene Expression Ontology
     uri: http://www.bio.ntnu.no/ontology/ReXO/rexo.owl
@@ -525,10 +533,10 @@ d site specificity, (which residues are susceptible to modification and any cons
     reasoner: NONE
     ontology_purl : https://raw.githubusercontent.com/scdodev/scdo-ontology/master/scdo.owl
 
-## overide for mondo 
+## overide for mondo
 
-  - id: mondo
-    ontology_purl: http://purl.obolibrary.org/obo/mondo.obo
+#  - id: mondo
+#    ontology_purl: http://purl.obolibrary.org/obo/mondo.obo
 
 ## overide for mi - todo remove after obo lib updates
 
@@ -541,30 +549,30 @@ d site specificity, (which residues are susceptible to modification and any cons
     preferredPrefix: NMR
     title: nuclear magnetic resonance CV
     uri: http://nmrML.org/nmrCV
-    description: "This artefact is an MSI-approved 
-controlled vocabulary primarily developed under COSMOS EU and PhenoMeNal 
-EU governance. The nmrCV is supporting the nmrML XML format with 
-standardized terms. nmrML is a vendor agnostic open access NMR raw data 
-standard. Its primaly role is analogous to the mzCV for the PSI-approved 
+    description: "This artefact is an MSI-approved
+controlled vocabulary primarily developed under COSMOS EU and PhenoMeNal
+EU governance. The nmrCV is supporting the nmrML XML format with
+standardized terms. nmrML is a vendor agnostic open access NMR raw data
+standard. Its primaly role is analogous to the mzCV for the PSI-approved
 mzML XML format. It uses BFO2.0 as its Top level.
- This CV was derived from two predecessors (The NMR CV from the David 
-Wishart Group, developed by Joseph Cruz) and the MSI nmr CV developed by 
-Daniel Schober at the EBI.  This simple taxonomy of terms (no DL 
-semantics used) serves the nuclear magnetic resonance markup language 
-(nmrML) with meaningful descriptors to amend the nmrML xml file with CV 
-terms. Metabolomics scientists are encouraged to use this CV to 
-annotrate their raw and experimental context data, i.e. within nmrML. 
-The approach to have an exchange syntax mixed of an xsd and CV stems 
-from the PSI mzML effort. The reason to branch out from an xsd into a CV 
-is, that in areas where the terminology is likely to change faster than 
-the nmrML xsd could be updated and aligned, an externally and 
-decentrallised maintained CV can accompensate for such dynamics in a 
-more flexible way. A second reason for this set-up is that semantic 
-validity of CV terms used in an nmrML XML instance (allowed CV terms, 
-position/relation to each other, cardinality) can be validated by 
-rule-based proprietary validators:  By means of cardinality 
-specifications and XPath expressions defined in an XML mapping file (an 
-instances of the CvMappingRules.xsd ), one can define what ontology 
+ This CV was derived from two predecessors (The NMR CV from the David
+Wishart Group, developed by Joseph Cruz) and the MSI nmr CV developed by
+Daniel Schober at the EBI.  This simple taxonomy of terms (no DL
+semantics used) serves the nuclear magnetic resonance markup language
+(nmrML) with meaningful descriptors to amend the nmrML xml file with CV
+terms. Metabolomics scientists are encouraged to use this CV to
+annotrate their raw and experimental context data, i.e. within nmrML.
+The approach to have an exchange syntax mixed of an xsd and CV stems
+from the PSI mzML effort. The reason to branch out from an xsd into a CV
+is, that in areas where the terminology is likely to change faster than
+the nmrML xsd could be updated and aligned, an externally and
+decentrallised maintained CV can accompensate for such dynamics in a
+more flexible way. A second reason for this set-up is that semantic
+validity of CV terms used in an nmrML XML instance (allowed CV terms,
+position/relation to each other, cardinality) can be validated by
+rule-based proprietary validators:  By means of cardinality
+specifications and XPath expressions defined in an XML mapping file (an
+instances of the CvMappingRules.xsd ), one can define what ontology
 terms are allowed in a specific location of the data model."
     homepage: http://nmrml.org/cv/
     mailing_list: https://groups.google.com/forum/?hl=en#!forum/nmrml/join
@@ -582,7 +590,7 @@ terms are allowed in a specific location of the data model."
     ontology_purl : http://nmrml.org/cv/stable/nmrCV.owl
 
 
-## SBO 
+## SBO
 
   - id: sbo
     title: Systems Biology Ontology
@@ -599,14 +607,14 @@ terms are allowed in a specific location of the data model."
      - http://purl.obolibrary.org/obo/RO_
 
 # set the base URI for NCBI taxon
-## NCBI taxonomy 
+## NCBI taxonomy
 
   - id: ncbitaxon
     base_uri:
      - http://purl.obolibrary.org/obo/NCBITaxon_
 
 ## AFO
-  
+
   - id: afo
     preferredPrefix: AFO
     title: Allotrope Merged Ontology Suite
@@ -696,9 +704,9 @@ terms are allowed in a specific location of the data model."
       - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
     reasoner: EL
     oboSlims: false
-    ontology_purl : https://raw.githubusercontent.com/HumanCellAtlas/ontology/master/hcao.owl
+    ontology_purl : https://raw.githubusercontent.com/ebi-ait/ontology/master/hcao.owl
 
- - id: amphx
+  - id: amphx
     preferredPrefix: AMPHX
     title: Amphioxus Development and Anatomy Ontology
     definition_property:
@@ -726,4 +734,185 @@ terms are allowed in a specific location of the data model."
     ontology_purl: http://purl.obolibrary.org/obo/plana.owl
     synonym_property:
       - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+
+
+
+  - id: idocovid19
+    preferredPrefix: IDO-COVID-19
+    title: The COVID-19 Infectious Disease Ontology
+    uri: https://raw.githubusercontent.com/infectious-disease-ontology-extensions/ido-covid-19/master/ontology/ido%20covid-19
+    description: "The COVID-19 Infectious Disease Ontology (IDO-COVID-19) is an extension of the Infectious Disease Ontology (IDO) and the Virus Infectious Disease Ontology (VIDO). IDO-COVID-19 follows OBO Foundry guidelines, employs the Basic Formal Ontology as its starting point, and covers epidemiology, classification, pathogenesis, and treatment of terms used to represent infection by the SARS-CoV-2 virus strain, and the associated COVID-19 disease."
+    homepage: https://github.com/infectious-disease-ontology-extensions/ido-covid-19
+    mailing_list: johnbeverley2021@u.northwestern.edu
+    definition_property:
+      - http://purl.obolibrary.org/obo/IAO_0000115
+    synonym_property:
+      - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+    hierarchical_property:
+      - http://purl.obolibrary.org/obo/BFO_0000050
+    base_uri:
+      - http://purl.obolibrary.org/obo/IDO-COVID-19
+    oboSlims: false
+    reasoner: OWL2
+    ontology_purl : https://raw.githubusercontent.com/infectious-disease-ontology-extensions/ido-covid-19/master/ontology/ido%20covid-19
+
+  - id: vido
+    preferredPrefix: VIDO
+    title: The Virus Infectious Disease Ontology
+    uri: https://raw.githubusercontent.com/infectious-disease-ontology-extensions/ido-virus/master/ontology/vido.owl
+    description: "The Virus Infectious Disease Ontology (IDO Virus) is an extension of the Infectious Disease Ontology (IDO). IDO Virus follows OBO Foundry guidelines, employs the Basic Formal Ontology as its starting point, and covers epidemiology, classification, pathogenesis, and treatment of terms used by Virologists, i.e. virus, prion, satellite, viroid, etc."
+    homepage: https://github.com/infectious-disease-ontology-extensions/ido-virus
+    mailing_list: johnbeverley2021@u.northwestern.edu
+    definition_property:
+      - http://purl.obolibrary.org/obo/IAO_0000115
+    synonym_property:
+      - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+    hierarchical_property:
+      - http://purl.obolibrary.org/obo/BFO_0000050
+    base_uri:
+      - http://purl.obolibrary.org/obo/VIDO_
+    oboSlims: false
+    reasoner: OWL2
+    ontology_purl : https://raw.githubusercontent.com/infectious-disease-ontology-extensions/ido-virus/master/ontology/vido.owl
+
+  - id: bcio
+    preferredPrefix: BCIO
+    title: The Behaviour Change Intervention Ontology
+    uri: http://humanbehaviourchange.org/ontology/bcio.owl
+    description: "The Behaviour Change Intervention Ontology is an ontology for all aspects of human behaviour change interventions and their evaluation."
+    homepage: https://www.humanbehaviourchange.org/
+    definition_property:
+      - http://purl.obolibrary.org/obo/IAO_0000115
+    synonym_property:
+      - http://purl.obolibrary.org/obo/IAO_0000118
+    hierarchical_property:
+      - http://purl.obolibrary.org/obo/BFO_0000050
+    base_uri:
+      - http://humanbehaviourchange.org/ontology
+    oboSlims: false
+    reasoner: OWL2
+    ontology_purl : http://humanbehaviourchange.org/ontology/bcio.owl
+
+  - id: covoc
+    preferredPrefix: COVOC
+    title: COVID-19 Vocabulary Ontology
+    uri: http://purl.obolibrary.org/obo/covoc.owl
+    description: "The COVID-19 Vocabulary (COVoc) is an ontology containing terms related to the research of the COVID-19 pandemic. This includes host organisms, pathogenicity, gene and gene products, barrier gestures, treatments and more."
+    homepage: https://github.com/EBISPOT/covoc
+    definition_property:
+      - http://purl.obolibrary.org/obo/IAO_0000115
+    synonym_property:
+      - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+    hierarchical_property:
+      - http://purl.obolibrary.org/obo/BFO_0000050
+    base_uri:
+      - http://purl.obolibrary.org/obo/COVOC_
+    oboSlims: false
+    reasoner: OWL2
+    ontology_purl : https://github.com/EBISPOT/covoc/releases/download/current/covoc.owl
+
+## OM
+
+  - id: om
+    preferredPrefix: OM
+    title: Ontology of units of Measure (OM)
+    uri: http://www.wurvoc.org/vocabularies/om-2.0/
+    description: "The OM ontology provides classes, instances, and properties that represent the different concepts used for defining and using measures and units. It includes, for instance, common units such as the SI units meter and kilogram, but also units from other systems of units such as the mile or nautical mile. For many application areas it includes more specific units and quantities, such as the unit of the Hubble constant: km/s/Mpc, or the quantity vaselife.  OM defines the complete set of concepts in the domain as distinguished in the textual standards. As a result the ontology can answer a wider range of competency questions than the existing approaches do. The following application areas are supported by OM:  Geometry; Mechanics; Thermodynamics; Electromagnetism; Fluid mechanics; Chemical physics; Photometry; Radiometry and Radiobiology; Nuclear physics; Astronomy and Astrophysics; Cosmology; Earth science; Meteorology; Material science; Microbiology; Economics; Information technology; Typography; Shipping; Food engineering; Post-harvest; technology; Dynamics of texture and taste; Packaging"
+    homepage: https://github.com/HajoRijgersberg/OM
+    mailing_list: hajo.rijgersberg@wur.nl
+    definition_property:
+      - http://purl.obolibrary.org/obo/IAO_0000115
+    synonym_property:
+      - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+    hierarchical_property:
+      - http://purl.obolibrary.org/obo/BFO_0000050
+      - http://purl.obolibrary.org/obo/RO_0002202
+    hidden_property:
+      - http://www.ebi.ac.uk/efo/has_flag
+    base_uri:
+      - http://www.wurvoc.org/vocabularies/om-2.0/
+    reasoner: EL
+    oboSlims: false
+    ontology_purl : https://raw.githubusercontent.com/HajoRijgersberg/OM/master/om-2.0.rdf
+
+
+## REPRODUCE-ME
+
+  - id: reproduceme
+    preferredPrefix: REPR
+    title: REPRODUCE-ME Ontology
+    uri: https://w3id.org/reproduceme/
+    description: "The REPRODUCE-ME ontology is an extension of the PROV-O and the P-Plan ontology to describe a complete path of a scientific experiment. It expresses the REPRODUCE-ME Data Model using the OWL2 Web Ontology Language (OWL2). It provides a set of classes and properties to represent a scientific experiment including its computational and non-computational steps to track the provenance of results. It describes a complete path of a scientific experiment considering the use-case of biological imaging and microscopy experiments, computational experiments, including Jupyter notebooks and scripts. It describes an experiment and its data, agents, activities, plans, steps, variables, instruments, materials, and settings required for its reproducibility."
+    homepage: https://w3id.org/reproduceme/research
+    mailing_list: sheeba.samuel@uni-jena.de
+    definition_property:
+      - http://www.w3.org/2000/01/rdf-schema#comment
+      - http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+    synonym_property:
+      - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+    hierarchical_property:
+      - http://www.w3.org/2000/01/rdf-schema#subClassOf
+      - http://www.w3.org/2000/01/rdf-schema#subPropertyOf
+    hidden_property:
+      - http://www.ebi.ac.uk/efo/has_flag
+    base_uri:
+      - https://w3id.org/reproduceme#
+    reasoner: OWL2
+    oboSlims: false
+    ontology_purl : https://sheeba-samuel.github.io/REPRODUCE-ME/doc/reproduce-me.xml
+
+  - id: prov
+    preferredPrefix: PROV
+    title: Provenance Ontology (PROV-O)
+    uri: http://www.w3.org/ns/prov#
+    homepage: https://www.w3.org/TR/prov-o/
+    definition_property:
+      - http://purl.obolibrary.org/obo/IAO_0000115
+    synonym_property:
+      - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+      - http://purl.obolibrary.org/obo/IAO_0000118
+      - http://www.ebi.ac.uk/efo/alternative_term
+    hierarchical_property:
+      - http://purl.obolibrary.org/obo/BFO_0000050
+    base_uri:
+      - http://www.bioassayontology.org/bao#
+    ontology_purl: https://www.w3.org/ns/prov-o
+
+  - id: orth
+    preferredPrefix: ORTH
+    title: Orthology Ontology
+    uri: http://purl.org/net/orth
+    homepage: http://purl.org/net/orth
+    definition_property:
+      - http://www.w3.org/2004/02/skos/core#definition
+      - http://www.w3.org/2000/01/rdf-schema#comment
+    synonym_property:
+      - http://www.w3.org/2002/07/owl#equivalentClass
+    hierarchical_property:
+      - http://purl.obolibrary.org/obo/BFO_0000050
+    base_uri:
+      - http://purl.org/net/orth#
+    ontology_purl: http://purl.org/net/orth
+    creator:
+       - Tarcisio Mendes de Farias, Hirokazu Chiba, Dmitry Kuznetsov, Erick Antezana, María del Carmen Legaz-García, Florent Villiers, Christophe Dessimoz, Jesualdo Tomás Fernández-Breis, Ikuo Uchiyama
+    description: "The need of a common ontology for describing orthology information in biological research communities has led to the creation of the Orthology Ontology (ORTH). ORTH ontology is designed to describe sequence homology data available in multiple orthology databases on the Web (e.g.: OMA, OrthoDB, HieranoiDB, and etc.). By sequence homology data, we mostly mean gene region, gene and protein centric orthology, paralogy, and xenology information. Depending on the database, the homology information is structured in different ways. ORTH ontology accommodates these disparate data structures namely Hierarchical Orthologous Group (HOG), cluster of homologous sequences and homologous-pairwise relations between sequences. In addition to the specific ORTH terms, this specification includes terms of the imported ontologies (e.g. Semanticscience Integrated Ontology, SIO) which are pertinents to represent the information from various orthology databases in a homogeneous way."
+
+  - id: cryoem
+    preferredPrefix: CRYOEM
+    title: Cryo Electron Microscopy ontology
+    uri: https://www.ebi.ac.uk/ols/ontologies/cryoem
+    homepage: http://scipion.i2pc.es/ontology/cryoem
+    definition_property:
+      - http://purl.obolibrary.org/obo/IAO_0000115
+    synonym_property:
+      - http://purl.obolibrary.org/obo/IAO_0000118
+    hierarchical_property:
+      - http://purl.obolibrary.org/obo/BFO_0000050
+    base_uri:
+      - http://scipion.i2pc.es/ontology/
+    ontology_purl: http://scipion.i2pc.es/ontology/cryoem.owl
+    mailing_list: isanchez@cnb.csic.es
+    creator:
+       - Carlos Oscar Sorzano, Irene Sánchez
+    description: "Ontology that describes data types and image processing operations in Cryo Electron Microscopy of Single Particles"
 
