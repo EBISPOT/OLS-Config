@@ -10,6 +10,14 @@ ontologies:
   - id: mondo
     reasoner: EL
 
+## CL override
+  - id: cl
+    reasoner: EL
+
+## UBERON override
+  - id: uberon
+    reasoner: EL
+
 ## PHI
 
   - id: phi
@@ -915,4 +923,3 @@ terms are allowed in a specific location of the data model."
     creator:
        - Carlos Oscar Sorzano, Irene Sánchez
     description: "Ontology that describes data types and image processing operations in Cryo Electron Microscopy of Single Particles"
-
