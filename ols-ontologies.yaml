@@ -278,7 +278,7 @@ ontologies:
   - id: enm
     preferredPrefix: ENM
     title: eNanoMapper Ontology
-    uri: http://purl.enanomapper.org/onto/enanomapper.owl
+    uri: http://enanomapper.github.io/ontologies/enanomapper.owl
     description: "The eNanoMapper project (www.enanomapper.net) is creating a pan-European computational infrastructure for toxicological data management for ENMs, based on semantic web standards and ontologies. > This ontology is an application ontology targeting the f\
 ull domain of nanomaterial safety assessment. It re-uses several other ontologies including the NPO, CHEMINF, ChEBI, and ENVO. "
     homepage: http://www.enanomapper.net/
@@ -298,7 +298,7 @@ ull domain of nanomaterial safety assessment. It re-uses several other ontologie
     base_uri:
       - http://purl.enanomapper.org/onto/ENM_
     oboSlims: false
-    ontology_purl : http://purl.enanomapper.net/onto/enanomapper.owl
+    ontology_purl : http://enanomapper.github.io/ontologies/enanomapper.owl
 
 ## ATOL
 
