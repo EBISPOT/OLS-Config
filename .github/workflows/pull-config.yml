@@ -2,6 +2,7 @@
 name: Pull config on ontotools-preprod server
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - prod
