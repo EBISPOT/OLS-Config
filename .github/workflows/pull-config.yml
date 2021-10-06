@@ -1,0 +1,17 @@
+
+name: Pull config on ontotools-preprod server
+
+on:
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  reload-config:
+    runs-on: self-hosted
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: Pull config on ontotools-preprod server
+        run: ssh spotbot@ontotools-preprod "cd /srv/data/ols/config/OLS-Config && git pull origin prod"
+        
+        
