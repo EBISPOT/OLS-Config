@@ -294,7 +294,7 @@ ontologies:
   - id: enm
     preferredPrefix: ENM
     title: eNanoMapper Ontology
-    uri: http://purl.enanomapper.org/onto/enanomapper.owl
+    uri: http://enanomapper.github.io/ontologies/enanomapper.owl
     description: "The eNanoMapper project (www.enanomapper.net) is creating a pan-European computational infrastructure for toxicological data management for ENMs, based on semantic web standards and ontologies. > This ontology is an application ontology targeting the f\
 ull domain of nanomaterial safety assessment. It re-uses several other ontologies including the NPO, CHEMINF, ChEBI, and ENVO. "
     homepage: http://www.enanomapper.net/
@@ -314,7 +314,7 @@ ull domain of nanomaterial safety assessment. It re-uses several other ontologie
     base_uri:
       - http://purl.enanomapper.org/onto/ENM_
     oboSlims: false
-    ontology_purl : http://purl.enanomapper.net/onto/enanomapper.owl
+    ontology_purl : http://enanomapper.github.io/ontologies/enanomapper.owl
 
 ## ATOL
 
@@ -528,18 +528,18 @@ d site specificity, (which residues are susceptible to modification and any cons
 
 ## scdo
 
-  - id: scdo
-    preferredPrefix: SCDO
-    title: Sickle Cell Disease Ontology
-    uri: http://scdontology.h3abionet.org/ontology/scdo.owl
-    description: "The Sickle Cell Disease Ontology (SCDO) project is a collaboration between H3ABioNet (Pan African Bioinformatics Network) and SPAN (Sickle Cell Disease Pan African Network). The SCDO is currently under development and its purpose is to 1) establish community standardized SCD terms and descriptions, 2) establish canonical and hierarchical representation of knowledge on SCD and 3) link to other ontologies and bodies of work such as DO, PhenX MeSH, ICD, NCI’s thesaurus, SNOMED and OMIM."
-    homepage: http://scdontology.h3abionet.org/
-    mailing_list: https://github.com/scdodev/scdo-ontology/issues
-    base_uri:
-      - http://scdontology.h3abionet.org/ontology/SCDO_
-    oboSlims: false
-    reasoner: NONE
-    ontology_purl : https://raw.githubusercontent.com/scdodev/scdo-ontology/master/scdo.owl
+  #- id: scdo
+    #preferredPrefix: SCDO
+    #title: Sickle Cell Disease Ontology
+    #uri: http://scdontology.h3abionet.org/ontology/scdo.owl
+    #description: "The Sickle Cell Disease Ontology (SCDO) project is a collaboration between H3ABioNet (Pan African Bioinformatics Network) and SPAN (Sickle Cell Disease Pan African Network). The SCDO is currently under development and its purpose is to 1) establish community standardized SCD terms and descriptions, 2) establish canonical and hierarchical representation of knowledge on SCD and 3) link to other ontologies and bodies of work such as DO, PhenX MeSH, ICD, NCI’s thesaurus, SNOMED and OMIM."
+    #homepage: http://scdontology.h3abionet.org/
+    #mailing_list: https://github.com/scdodev/scdo-ontology/issues
+    #base_uri:
+      #- http://scdontology.h3abionet.org/ontology/SCDO_
+    #oboSlims: false
+    #reasoner: NONE
+    #ontology_purl : https://raw.githubusercontent.com/scdodev/scdo-ontology/master/scdo.owl
 
 ## overide for mondo
 
@@ -923,3 +923,23 @@ terms are allowed in a specific location of the data model."
     creator:
        - Carlos Oscar Sorzano, Irene Sánchez
     description: "Ontology that describes data types and image processing operations in Cryo Electron Microscopy of Single Particles"
+
+
+  - id: snomed
+    preferredPrefix: SNOMED
+    title: SNOMED CT (International Edition)
+    description: >
+      SNOMED CT or SNOMED Clinical Terms is a systematically organized computer processable collection of medical terms providing codes, terms, synonyms and definitions used in clinical documentation and reporting.
+    uri: http://snomed.info/sct/900000000000207008
+    base_uri:
+      - http://snomed.info/id/
+    synonym_property:
+      - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+    definition_property:
+      - http://purl.obolibrary.org/obo/IAO_0000115
+#    label_property:  http://www.w3.org/2004/02/skos/core#prefLabel
+    reasoner: EL
+    oboSlims: false
+    ontology_purl: file:///nfs/spot/data/test/ols/snomed.owl
+    allow_download: false
+    
