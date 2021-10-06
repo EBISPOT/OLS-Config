@@ -942,4 +942,3 @@ terms are allowed in a specific location of the data model."
     oboSlims: false
     ontology_purl: file:///nfs/spot/data/test/ols/snomed.owl
     allow_download: false
-    
