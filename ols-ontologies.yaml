@@ -2,6 +2,10 @@
 
 ontologies:
 
+## DOID override
+  - id: doid
+    reasoner: EL
+
 ## GO override
   - id: go
     reasoner: EL
