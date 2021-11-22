@@ -1,5 +1,5 @@
 
-name: Pull config on ontotools-preprod server
+name: Pull config on ontotools-dev server
 
 on:
   workflow_dispatch:
