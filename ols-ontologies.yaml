@@ -21,7 +21,7 @@ ontologies:
 ## UBERON override
   - id: uberon
     reasoner: EL
-
+    
 ## PHI
 
   - id: phi
@@ -945,4 +945,22 @@ terms are allowed in a specific location of the data model."
     reasoner: EL
     oboSlims: false
     ontology_purl: file:///nfs/spot/data/test/ols/snomed.owl
+    allow_download: false
+
+ - id: pcl
+    preferredPrefix: PCL
+    title: PCL Ontology
+    description: Cell types that are provisionally defined by experimental techniques such as single cell or single nucleus transcriptomics rather than a straightforward & coherent set of properties. 
+    uri: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/master/pcl-full.owl
+    base_uri:
+      - http://purl.obolibrary.org/obo/PCL_
+    synonym_property:
+      - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+    definition_property:
+      - http://purl.obolibrary.org/obo/IAO_0000115
+    preferred_root_term:
+      - http://purl.obolibrary.org/obo/CL_0000000
+    reasoner: EL
+    oboSlims: false
+    ontology_purl: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/master/pcl-full.owl
     allow_download: false
