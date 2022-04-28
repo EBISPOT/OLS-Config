@@ -947,7 +947,7 @@ terms are allowed in a specific location of the data model."
     ontology_purl: file:///nfs/spot/data/test/ols/snomed.owl
     allow_download: false
 
- - id: pcl
+  - id: pcl
     preferredPrefix: PCL
     title: PCL Ontology
     description: Cell types that are provisionally defined by experimental techniques such as single cell or single nucleus transcriptomics rather than a straightforward & coherent set of properties. 
