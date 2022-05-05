@@ -964,3 +964,17 @@ terms are allowed in a specific location of the data model."
     oboSlims: false
     ontology_purl: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/master/pcl-full.owl
     allow_download: false
+    
+  ## SHARELOC
+
+  - id: shareloc
+    preferredPrefix: SHARELOC
+    title: ShareLoc
+    ontology_purl: https://raw.githubusercontent.com/imodpasteur/ShareLoc.XYZ/ontology/shareloc.owl
+
+  ## CCF
+
+  - id: ccf
+    preferredPrefix: CCF
+    title: Common Coordinate Framework Ontology
+    ontology_purl: https://purl.org/ccf/2.0/ccf.owl
