@@ -977,4 +977,43 @@ terms are allowed in a specific location of the data model."
   - id: ccf
     preferredPrefix: CCF
     title: Common Coordinate Framework Ontology
+    is_foundry: false
+    uri: https://purl.org/ccf/ccf.owl
+    label_property: http://www.w3.org/2000/01/rdf-schema#label
+    definition_property:
+      - http://purl.obolibrary.org/obo/IAO_0000115
+    hierarchical_property:
+      - http://purl.obolibrary.org/obo/BFO_0000050
+    synonym_property:
+      - http://purl.org/sig/ont/fma/synonym
+      - http://www.lungmap.net/ontologies/database#synonym
+      - https://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+    preferred_root_term:
+      - http://purl.obolibrary.org/obo/UBERON_0000955
+      - http://purl.obolibrary.org/obo/UBERON_0000029
+      - http://purl.obolibrary.org/obo/UBERON_0000970
+      - http://purl.obolibrary.org/obo/UBERON_0003889
+      - http://purl.obolibrary.org/obo/UBERON_0000948
+      - http://purl.obolibrary.org/obo/UBERON_0002113
+      - http://purl.obolibrary.org/obo/UBERON_0001465
+      - http://purl.obolibrary.org/obo/UBERON_0002107
+      - http://purl.obolibrary.org/obo/UBERON_0002048
+      - http://purl.obolibrary.org/obo/UBERON_0000992
+      - http://purl.obolibrary.org/obo/UBERON_0001264
+      - http://purl.obolibrary.org/obo/UBERON_0001270
+      - http://purl.obolibrary.org/obo/UBERON_0002367
+      - http://purl.obolibrary.org/obo/UBERON_0002097
+      - http://purl.obolibrary.org/obo/UBERON_0002108
+      - http://purl.obolibrary.org/obo/UBERON_0000059
+      - http://purl.obolibrary.org/obo/UBERON_0002106
+      - http://purl.obolibrary.org/obo/UBERON_0002370
+      - http://purl.obolibrary.org/obo/UBERON_0000056
+      - http://purl.obolibrary.org/obo/UBERON_0001255
+      - http://purl.obolibrary.org/obo/UBERON_0000995
+      - http://purl.obolibrary.org/obo/UBERON_0004537
+      - http://purl.obolibrary.org/obo/UBERON_0000178
+      - http://purl.obolibrary.org/obo/UBERON_0004536
+    base_uri:
+      - https://purl.org/ccf/
+    oboSlims: false
     ontology_purl: https://purl.org/ccf/2.0/ccf.owl
