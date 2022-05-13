@@ -1012,6 +1012,13 @@ terms are allowed in a specific location of the data model."
       - http://purl.obolibrary.org/obo/UBERON_0004537
       - http://purl.obolibrary.org/obo/UBERON_0000178
       - http://purl.obolibrary.org/obo/UBERON_0004536
+      - http://purl.org/ccf/dataset
+      - http://purl.org/ccf/person
+      - http://purl.org/ccf/sample
+      - http://purl.org/ccf/tissue_mapping_center
+      - http://purl.org/ccf/spatial_entity
+      - http://purl.org/ccf/spatial_object_reference
+      - http://purl.org/ccf/spatial_placement
     base_uri:
       - https://purl.org/ccf/
     oboSlims: false
