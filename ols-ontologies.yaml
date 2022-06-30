@@ -550,6 +550,13 @@ d site specificity, (which residues are susceptible to modification and any cons
 #  - id: mondo
 #    ontology_purl: http://purl.obolibrary.org/obo/mondo.obo
 
+## overide for mi - todo remove after obo lib updates
+
+  - id: mi
+    ontology_purl: https://raw.githubusercontent.com/HUPO-PSI/psi-mi-CV/master/psi-mi.obo
+    definition_property:
+      - http://purl.obolibrary.org/obo/IAO_0000115
+
 ## nmrCV
 
   - id: nmrCV
