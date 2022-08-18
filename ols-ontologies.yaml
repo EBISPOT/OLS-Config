@@ -610,6 +610,8 @@ terms are allowed in a specific location of the data model."
     title: Systems Biology Ontology
     definition_property:
       - http://www.w3.org/2000/01/rdf-schema#comment
+    base_uri:
+      - http://biomodels.net/SBO/SBO_
 
 
 # add BFO part_of as local term in RO
