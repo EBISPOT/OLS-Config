@@ -1027,3 +1027,13 @@ terms are allowed in a specific location of the data model."
       - https://purl.org/ccf/
     oboSlims: false
     ontology_purl: https://purl.org/ccf/2.0/ccf.owl
+  
+  ## CPONT
+  
+  - id: cpont
+    preferredPrefix: CPONT
+    title: Critical Path Ontology
+    description: An application ontology for integrating data from the Critical Path Institute's Rare Disease Cures Accelerator Data and Analytica Platform (RDCA-DAP).
+    repository: https://gitlab.c-path.org/c-pathontology/critical-path-ontology/
+    ontology_purl: https://w3id.org/cpont/cpont.owl
+ 
