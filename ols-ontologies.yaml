@@ -1035,5 +1035,27 @@ terms are allowed in a specific location of the data model."
     title: Critical Path Ontology
     description: An application ontology for integrating data from the Critical Path Institute's Rare Disease Cures Accelerator Data and Analytica Platform (RDCA-DAP).
     repository: https://gitlab.c-path.org/c-pathontology/critical-path-ontology/
+    homepage: https://gitlab.c-path.org/c-pathontology/critical-path-ontology
     ontology_purl: https://w3id.org/cpont/cpont.owl
- 
+    uri: https://w3id.org/cpont/cpont.owl
+    creator:
+      - James Overton https://orcid.org/0000-0001-5139-5557
+      - Nicole Vasilesvky https://orcid.org/0000-0001-5208-3432
+      - Emily Hartley https://orcid.org/0000-0001-5839-2535
+      - Emani Hunter https://orcid.org/0000-0001-8545-8114
+      - Daniel Olson https://orcid.org/0000-0002-8134-1207
+      - Rebecca Jackson https://orcid.org/0000-0003-4871-5569
+    is_foundry: false
+    mailing_list: rwalls@c-path.org
+    label_property: http://www.w3.org/2000/01/rdf-schema#label
+    definition_property:
+      - http://purl.obolibrary.org/obo/IAO_0000115
+    synonym_property:
+      - http://www.w3.org/2004/02/skos/core#closeMatch
+      - http://www.w3.org/2004/02/skos/core#exactMatch
+      - http://www.w3.org/2004/02/skos/core#narrowMatch
+      - http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym
+    base_uri:
+      - https://w3id.org/cpont
+    reasoner: NONE
+    oboSlims: false
