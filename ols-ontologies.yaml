@@ -1059,3 +1059,8 @@ terms are allowed in a specific location of the data model."
       - https://w3id.org/cpont
     reasoner: NONE
     oboSlims: false
+
+## OBA override
+  - id: oba
+    hierarchical_property:
+      - http://purl.obolibrary.org/obo/BFO_0000050
