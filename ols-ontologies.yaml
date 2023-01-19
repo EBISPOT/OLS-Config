@@ -91,7 +91,7 @@ ontologies:
     base_uri:
       - http://purl.unep.org/sdg/SDGIO_
     oboSlims: false
-    ontology_purl: http://purl.unep.org/sdg/sdgio.owl
+    ontology_purl: https://raw.githubusercontent.com/SDG-InterfaceOntology/sdgio/master/sdgio.owl
 
 ## Ensembl glossary
 
@@ -174,7 +174,7 @@ ontologies:
     base_uri:
       - http://identifiers.org/teddy/TEDDY_
     oboSlims: false
-    ontology_purl : http://www.biomodels.net/teddy/TEDDY
+    ontology_purl : file:///nfs/production/parkinso/spot/ols4/dev/local_ontologies/teddy-inferred.owl
 
 ## EDAM
 
